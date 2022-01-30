@@ -22,9 +22,9 @@ namespace BLREdit
             VersionCheck();
             ImportSystem.Initialize();
         }
-        const string CurrentVersion = "v0.2.3";
-        const string CurrentVersionName = "BLREdit Bug Fixes With QoL";
-        public const string CurrentOwner = "HALOMAXX";
+        const string CurrentVersion = "v0.1.0";
+        const string CurrentVersionName = "BLREdit Preparity Style";
+        public const string CurrentOwner = "MythicalPigeon";
         public const string CurrentRepo = "BLREdit";
         public static void VersionCheck()
         {

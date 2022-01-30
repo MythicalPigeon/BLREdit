@@ -7,10 +7,10 @@
         Title="BLREdit" Height="940" Width="1660" Loaded="Window_Loaded" Closing="Window_Closing" Foreground="Black">
 
     <Window.Background>
-        <ImageBrush ImageSource="Resources/Default_2016.png" />
+        <ImageBrush ImageSource="Resources/Default_2014.png" />
     </Window.Background>
     <Grid AllowDrop="True">
-        <ListView x:Name="ItemList" Margin="361,0,0,0">
+        <ListView x:Name="ItemList" Margin="371,0,0,0" Background="#33000000">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="4" HorizontalAlignment="Left"/>
@@ -157,12 +157,12 @@
         <Label Name="SecondaryRunLabel" Content="0" HorizontalAlignment="Left" Margin="271,677,0,0" VerticalAlignment="Top" Style="{StaticResource DisplayLabel}"/>
         <ComboBox Name="ProfileComboBox" DisplayMemberPath="PlayerName" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="22" SelectionChanged="ProfileComboBox_SelectionChanged">
         </ComboBox>
-        <Button Name="Loadout1Button" Content="Loadout 1" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout1Button_Click"/>
-        <Button Name="Loadout2Button" Content="Loadout 2" HorizontalAlignment="Left" Margin="120,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout2Button_Click"/>
-        <Button Name="Loadout3Button" Content="Loadout 3" HorizontalAlignment="Left" Margin="230,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout3Button_Click"/>
+        <Button Name="Loadout1Button" Content="Loadout 01" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout1Button_Click" Background="#FFDDDDDD" BorderBrush="#FF707070" Foreground="Black"/>
+        <Button Name="Loadout2Button" Content="Loadout 02" HorizontalAlignment="Left" Margin="120,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout2Button_Click"/>
+        <Button Name="Loadout3Button" Content="Loadout 03" HorizontalAlignment="Left" Margin="230,74,0,0" VerticalAlignment="Top" Width="105" Height="22" Click="Loadout3Button_Click"/>
         <Button Name="CopyToClipboardButton" Content="CopyToClipBoard" HorizontalAlignment="Left" Margin="120,35,0,0" VerticalAlignment="Top" Height="22" Width="116" Click="CopyToClipboardButton_Click"/>
         <Button Name="AddProfileButton" Content="AddProfile" HorizontalAlignment="Left" Margin="241,0,0,0" VerticalAlignment="Top" Height="22" Width="100" Click="AddProfileButton_Click"/>
-        <TextBox Name="PlayerNameTextBox"  HorizontalAlignment="Left" Margin="121,0,0,0" TextWrapping="Wrap" Text="Player" VerticalAlignment="Top" Width="120" Height="22" TextChanged="PlayerNameTextBox_TextChanged"/>
+        <TextBox Name="PlayerNameTextBox"  HorizontalAlignment="Left" Margin="121,0,0,0" TextWrapping="Wrap" Text="Player" VerticalAlignment="Top" Width="120" Height="22" TextChanged="PlayerNameTextBox_TextChanged" Background="#72190000"/>
 
         <Border Height="64" Width="64" HorizontalAlignment="Left" Margin="10,734,0,0" VerticalAlignment="Top" AllowDrop="True" DragEnter="Image_DragEnter" Drop="Image_Drop" MouseUp="Image_MouseUp">
             <Image HorizontalAlignment="Left" Source="{Binding SmallSquareImage}" x:Name="GearImage1" VerticalAlignment="Top" Stretch="Fill" ToolTip="{Binding tooltip}"/>
